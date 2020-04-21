@@ -47,7 +47,7 @@ def parse_html(html_page):
                     "year" : x.find_all("div", {'class' : 'b-advItem__title'})[0]
                               .text
                               .split(", ")[1],
-                    "price" : x.find_all('div', {'class' : 'b-advItem__price '})[0]
+                    "price" : x.find_all('div', {'class' : 'b-advItem__price'})[0]
                                .text
                                .replace("\n", "")
                                .replace("\xa0", "")
